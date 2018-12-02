@@ -1,6 +1,7 @@
 package com.vitali.cloud.jlong.customerapplication;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+@Component
 @RequiredArgsConstructor
 public class CustomerService {
 
