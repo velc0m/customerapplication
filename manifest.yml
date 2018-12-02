@@ -1,7 +1,7 @@
 ---
 applications:
   - name: bootcamps-customers
-    buildpack: https://github.com/velc0m/customerapplication.git
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
     instances: 1
     random-toute: true
     path: target/customerapplication-0.0.1-SNAPSHOT.jar
