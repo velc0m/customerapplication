@@ -1,0 +1,6 @@
+CREATE SCHEMA customers;
+CREATE TABLE CUSTOMERS
+(
+  id    LONG        NOT NULL,
+  email VARCHAR(50) NOT NULL
+);
