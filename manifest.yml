@@ -1,12 +1,13 @@
 ---
 applications:
   - name: bootcamps-customers
-    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
     instances: 1
     random-toute: true
     path: target/customerapplication-0.0.1-SNAPSHOT.jar
     services:
-      - mysql
+      - customers-mysql
     env:
       DEBUG: "true"
       SPRING_PROFILES_ACTIVE: cloud
